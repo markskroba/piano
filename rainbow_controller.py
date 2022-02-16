@@ -1,10 +1,10 @@
 # libraries for controlling lights
 import board
 import neopixel
-from LightsController import Controller
+import LightsController
 
 # test
-class RainbowController(Controller):
+class RainbowController(LightsController.Controller):
     DOWN = 144
 
     def __init__(self, num_lights):
@@ -30,14 +30,7 @@ class RainbowController(Controller):
         print(message, deltatime)
         state = message[0]
 
-        changeState(self, state)
 
-#        if state == RainbowController.DOWN:
-#            self.pixels[self.next_light % self.num_lights] = self.color_on
-#            self.next_light+=1
-#        else:
-#            self.pixels[self.prev_light % self.num_lights] = self.color_off
-#            self.prev_light+=1
 
 ##Funtion that makes each light a different rainbow color
 def wheel(pos):
