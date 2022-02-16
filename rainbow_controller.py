@@ -1,7 +1,7 @@
 # libraries for controlling lights
 import board
 import neopixel
-from LightsController import Controller
+import Controller
 
 # test
 class RainbowController(Controller):
