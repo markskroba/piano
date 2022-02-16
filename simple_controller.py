@@ -1,7 +1,7 @@
 # libraries for controlling lights
 import board
 import neopixel
-from controller import Controller
+from LightsController import Controller
 
 class SimpleController(Controller):
     DOWN = 144
